@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html ng-app="shitlist">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Shitlist</title>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        <script src="app.js"></script>
+
+    </head>
+    <body ng-controller="findOutController">
+        <div class="container">
+
+            <div class="jumbotron text-center">
+                <h1>Who should be on your shitlist?</h1>
+                <h3>Time to find the fuck out</h3>
+            </div>
+
+            <form>
+                <label>Street Address: <input type="text" ng-model="address.street" /></label><br />
+                <label>City: <input type="text" ng-model="address.city" /></label><br />
+                <label>State: <input type="text" ng-model="address.state" /></label><br />
+                <label>Zip Code: <input type="text" ng-model="address.zip" /></label><br />
+                <input type="button" class="btn btn-primary" type="submit" ng-click="getReps(address)" value="Find Out" />
+            </form>
+
+        </div>
+
+    </body>
+</html>
